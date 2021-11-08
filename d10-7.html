@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='show'></div>
+    <div id='show2'></div>
+    <button onclick="myFunction()">ok</button>
+    <script>
+        var text;
+        var fruits = ["banana","Orange","Apple","Mango","papaya"];
+        var num = fruits.length;
+      
+        function myFunction(){
+            fruits.sort();
+            document.getElementById("show").innerHTML=fruits;
+            document.getElementById("show2").innerHTML=fruits[0];
+        }
+        document.getElementById("show2").innerHTML=fruits[0];
+    </script>
+</body>
+</html>

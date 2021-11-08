@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1"><button onclick="myFunction()">ok</button>
+    <div id="text1"></div>
+    <div id="text2"></div>
+    <div id="text3"></div>
+    
+    <script>
+            
+            document.getElementById("input1").focus();
+
+        var textbox1=[],textbox2=[],textbox3=[];
+       
+        function myFunction(){
+          
+            var textboxg = document.getElementById("input1").value;
+            document.getElementById("input1").focus();
+            textbox1.push(textboxg);
+            document.getElementById("text1").innerHTML="ที่รับมา :"+textbox1+"\n";
+
+            document.getElementById("input1").focus();
+            textbox2.push(textboxg);
+            textbox2.sort();
+            document.getElementById("text2").innerHTML="น้อยไปมาก :"+textbox2+"\n";
+
+            document.getElementById("input1").focus();
+            textbox3.push(textboxg);
+            textbox3.sort();
+            textbox3.reverse();
+            document.getElementById("text3").innerHTML="มากไปน้อย :"+textbox3+"\n";
+            document.getElementById("input1").value ="";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <h2>ดึงค่า textbox</h2>
+    <input type="text" id="input1"><br>
+    <input type="text" id="input2"><br>
+    <button onclick="getvalue()">OK</button>
+
+    <div id="test1">div1</div>
+    <div id="test2">div2</div>
+    <div id="test3">div2</div>
+
+    <script>
+        function getvalue(){
+            var x1=Number(document.getElementById("input1").value);
+            var x2 = Number(document.getElementById("input2").value);
+            var sum = x1+x2;
+            document.getElementById("test1").innerHTML="ค่าที่1 = "+x1;
+            document.getElementById("test2").innerHTML = "ค่าที่2 = " + x2;
+            document.getElementById("test3").innerHTML = "ผลรวม " + sum;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+<!-- 
+        <h2>ทดสอบ javaScript</h2>
+        <div id="test1">ข้อความที่ 1</div>
+        <button onclick="myFunction()">ปุ่มที่ 1</button>
+
+        <div id="test2">ข้อความที่ 2</div>
+        <button onclick="myFunction1()">กดปุ่มที่ 2</button>
+
+        <div id="test3">ลบข้อความที่แแสดง</div>
+        <button onclick="myFunction2()">กดปุ่มที่ 3</button>
+        <br><br> -->
+
+
+        <h2>ดึงค่า textbox</h2>
+        <input type="text" id="input1"><br>
+        <input type="text" id="input2"><br>
+        <button onclick="getvalue()">OK</button>
+    
+        <div id="test1">div1</div>
+        <div id="test2">div2</div>
+    
+        
+    
+        <script>
+            // var name="ไอ้นิค";
+            // var number=100;
+            // var price=25.25;
+            // var status = true;
+
+            // document.write(name);
+            // document.write(price);
+            // document.write(number);
+            // document.write(status);
+
+            // var x=100;
+            // var y=200;
+            // x+=y;
+            //     document.write(x+y);
+
+            function myFunction(){
+                document.getElementById("test1").innerHTML="สวัสดี";
+                
+            }
+            function myFunction1(){
+                document.getElementById("test2").innerHTML="hello";
+                
+            }
+            function myFunction2(){
+                document.getElementById("test1").innerHTML="<br>";
+                document.getElementById("test2").innerHTML="<br>";
+            }
+            function getvalue(){
+                var x1=document.getElementById("input1").value;
+                var x2 = document.getElementById("input2").value;
+                document.getElementById("test1").innerHTML="ค่าที่1 = "+x1;
+                document.getElementById("test2").innerHTML = "ค่าที่2 = " + x2;
+            }
+        </script>
+</body>
+</html>

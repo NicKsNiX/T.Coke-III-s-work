@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+   input 1 <input type="text" id="tx1"><br><br>
+   input 2 <input type="text" id="tx2"><br><br>
+   input 3 <input type="text" id="tx3"><br><br>
+   input 4 <input type="text" id="tx4"><br><br>
+   input 5 <input type="text" id="tx5"><br><br>
+
+
+
+<script>
+    $(function(){
+            $("#tx1").focus();
+
+            $("#tx4").focusout(function(){
+                var x1 = $("#tx1").val();
+                var x2 = $("#tx2").val();
+                var x3 = $("#tx3").val();
+                var x4 = $("#tx4").val();
+                var x5 = $("#tx").val();
+                $("#tx5").val(x1+x2+x3+x4);
+                $("#tx1").val(x5);
+                $("#tx2").val(x5);
+                $("#tx3").val(x5);
+                $("#tx4").val(x5);
+
+            })
+            
+           
+
+            
+    })
+ 
+    
+  
+</script>
+</body>
+</html>
